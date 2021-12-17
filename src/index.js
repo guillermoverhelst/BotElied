@@ -1,5 +1,5 @@
 require('dotenv').config();
-import { Client, Intents, MessageAttachment, MessageEmbed, Interaction } from 'discord.js';
+const {Client,  Intents} = require('discord.js');
 const client  = new Client({ intents: [Intents.FLAGS.GUILDS, Intents.FLAGS.GUILD_MESSAGES] });
 
 client.on('messageCreate', message => {
